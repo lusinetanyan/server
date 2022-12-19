@@ -2,8 +2,8 @@ import express from 'express'
 import {Performance} from "./performance.js";
 
 const app = express();
-const PORT = 5001;
-const PERFORMANCES: Performance[] = [
+const PORT = 4200;
+const PERFORMANCES = [
     new Performance(1, 'Արթուրո Ուիի կարիերան, որը պետք է կանխվեր', 20),
     new Performance(2, 'Արծվաբույն',20),
     new Performance(3, 'Պեպո',20),
