@@ -29,6 +29,11 @@ app.get('/performances/:id', (req, res) => {
     res.status(200).json(PERFORMANCES.find(performance => performance.id === Number(req.params.id)));
 });
 
+app.get('', (req, res) => {
+    res.status(200);
+    res.redirect('/performances');
+});
+
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`)
 })
